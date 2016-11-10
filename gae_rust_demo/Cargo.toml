@@ -1,0 +1,9 @@
+[package]
+name = "gae_rust_demo"
+version = "0.1.0"
+authors = ["MingjunYang <yangaust@gmail.com>"]
+
+[dependencies]
+rustful = "0.9"
+log = "0.3"
+env_logger = "0.3"
