@@ -10,11 +10,10 @@ RUN mkdir -p /usr/local/openresty/nginx/www/_ah && \
 ADD www/ /usr/local/openresty/nginx/www/
 RUN chmod -R a+r /usr/local/openresty/nginx/www
 
+ADD nginx/conf /usr/local/openresty/nginx/conf
 ADD nginx/lualib /usr/local/openresty/nginx/lualib
 ADD nginx/luasrc /usr/local/openresty/nginx/luasrc
 
-EXPOSE 80
-EXPOSE 443
 
 # TODO: remove any other apt packages?
 ENTRYPOINT ["/usr/local/openresty/bin/openresty", "-g", "daemon off;"]

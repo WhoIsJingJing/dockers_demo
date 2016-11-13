@@ -2,9 +2,6 @@ runtime: custom
 vm: true
 threadsafe: yes
 
-manual_scaling:
-  instances: 1
-
 handlers:
 - url: .*
   script: dynamic

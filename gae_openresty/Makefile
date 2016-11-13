@@ -1,5 +1,5 @@
 
-tag?=gae/openresty
+tag?=gae/xiaoming/openresty
 
 all: run
 
