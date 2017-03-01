@@ -106,10 +106,11 @@ RUN set -ex \
 
 # make some useful symlinks that are expected to exist
 RUN cd /usr/local/bin \
-	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } \
-	&& ln -s idle2 idle \
-	&& ln -s pydoc2 pydoc \
-	&& ln -s python2 python \
-	&& ln -s python2-config python-config
+	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; }
+	#  \
+	# && ln -s idle2 idle \
+	# && ln -s pydoc2 pydoc \
+	# && ln -s python2 python \
+	# && ln -s python2-config python-config
 
 CMD ["python2"]
